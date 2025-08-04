@@ -3,7 +3,7 @@
 ---
 
 ### Selecionar idioma:
-- [English](https://github.com/louuispy/Chatbot-with-PDF-reader/blob/main/README-en.md)
+- [English](https://github.com/louuispy/Challenge-Secret-Friend/blob/main/README-en.md)
 - [Português](https://github.com/louuispy/Challenge-Secret-Friend/blob/main/README.md)
 
 ---
