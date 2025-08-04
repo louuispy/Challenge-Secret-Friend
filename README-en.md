@@ -1,6 +1,11 @@
 
 # Secret Santa  
 ---
+### Switch language:
+- [English](https://github.com/louuispy/Challenge-Secret-Friend/blob/main/README-en.md)
+- [Português](https://github.com/louuispy/Challenge-Secret-Friend/blob/main/README.md)
+
+---
 
 ### What is the Secret Santa project?
 
