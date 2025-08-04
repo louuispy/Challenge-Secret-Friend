@@ -1,5 +1,9 @@
 
 # Secret Santa  
+
+<img width="1011" height="857" alt="image" src="https://github.com/user-attachments/assets/44fd637e-129a-4c17-8885-fdd27691ca43" />
+
+
 ---
 ### Switch language:
 - [English](https://github.com/louuispy/Challenge-Secret-Friend/blob/main/README-en.md)
