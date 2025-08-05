@@ -222,27 +222,58 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: #ffffff;
     font-size: 22px;
-    font-weight: bold;
+    font-family: "Poppins";
+    font-weight: 500%;
     text-align: center;
 }
 
 /* Botão de sortear título */
 .button-draw {
-    display: flex;
-    align-items: center;
+    position: relative;
     width: 100%;
-    padding: 10px 40px;
-    color: var(--color-white);
+    max-width: 250px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
     background-color: var(--color-button);
+    color: var(--color-white);
     font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .button-draw img {
-    margin-right: 40px;
+    position: absolute;
+    left: 20px;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.button-draw span {
+    transition: transform 0.3s ease;
 }
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+    color: var(--color-primary);
+    transform: scale(1.1);
 }
+
+.button-draw:hover img {
+    color: var(--color-text);
+    opacity: 1;
+    transform: scale(1);
+}
+
+.button-draw:hover span {
+    transform: translateX(10px);
+}
+
