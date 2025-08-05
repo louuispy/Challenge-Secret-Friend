@@ -146,6 +146,28 @@ button {
     opacity: 1;
 }
 
+.botao-editar {
+    background-color: var(--color-secondary);
+    opacity: 0.5;
+    color: var(--color-white);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 30px;
+    border-radius: 10px;
+    font-size: small;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: transform 0.3s, visibility 0.3s, opacity 0.3s, background-color 0.3s;
+}
+
+.botao-editar:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
 /* Listas */
 ul {
     list-style-type: none;

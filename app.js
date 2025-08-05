@@ -30,7 +30,19 @@ function exibirNomesAmigos() {
             exibirNomesAmigos();
         };
 
+        let botaoEditarNome = document.createElement("button");
+        botaoEditarNome.innerHTML = "✎"
+        botaoEditarNome.classList.add("botao-editar");
+        botaoEditarNome.title = "Editar nome"
+
+        botaoEditarNome.onclick = function() {
+            let novoNome = prompt("Digite o novo nome");
+            amigos[amigos.indexOf(nome)] = novoNome;
+            exibirNomesAmigos();
+        };
+
         li.appendChild(botaoExcluirNome);
+        li.appendChild(botaoEditarNome);
     };
 };
 
