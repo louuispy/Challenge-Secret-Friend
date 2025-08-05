@@ -1,10 +1,10 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
-    --color-text: #444444;
+    --color-primary: #000000;
+    --color-secondary: #292929;
+    --color-tertiary: #2f2e30;
+    --color-placeholder: #202020;;
+    --color-button: #141414;
+    --color-button-hover: #ececeb;
     --color-white: #FFFFFF;
 }
 
@@ -17,10 +17,28 @@
 
 body {
     height: 100vh;
-    background-color: var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+    animation: colors 15s ease infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .main-content {
@@ -41,88 +59,113 @@ body {
 
 /* Seção de entrada */
 .input-section {
-    flex: 60%;
-    background-color: var(--color-secondary);
-    border: 1px solid #000;
-    border-radius: 64px 64px 0 0;
+    background: rgb(41, 41, 41);
+    border-radius: 20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    width: 100%;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 38%;
+    justify-content: center;
+    margin-bottom: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
 }
 
 /* Títulos */
 .main-title {
     font-size: 48px;
-    font-family: "Merriweather", serif;
-    font-weight: 900;
-    font-style: italic;
+    font-family: "Poppins", serif;
+    font-weight: 700;
     color: var(--color-white);
 }
 
 .section-title {
-    font-family: "Inter", serif;
-    font-size: 36px;
+    font-family: "Poppins", serif;
+    font-size: 25px;
     font-weight: 700;
-    color: var(--color-primary);
+    color: var(--color-white);
     margin: 10px 0;
     text-align: center;
 }
 
 /* Contêineres de entrada e botão */
 .input-wrapper {
-    display: flex;
-    justify-content: center;
+    position: relative;
+    display: inline-block;
     width: 100%;
     max-width: 600px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .input-name {
     width: 100%;
+    height: 148%;
     padding: 10px;
-    border: 2px solid #000;
-    border-radius: 25px 0 0 25px;
+    padding-right: 60px;
+    padding-left: 25px;
+    border-radius: 15px 15px 15px 15px;
     font-size: 16px;
+    border: none;
+    background-color: var(--color-placeholder);
+    color: var(--color-white);
 }
 
 .button-container {
-    width: 300px;
+    width: 200px;
     justify-content: center;
 }
 
 /* Estilos de entrada de texto */
 .input-title {
-    flex: 1;
-    padding: 10px 15px;
+    width: 100%;
+    padding: 10px 60px 10px 15px; /* padding-right aumentado para caber o botão */
     font-size: 16px;
-    border: 2px solid #333;
-    border-right: none;
-    border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 25px;
+    font-family: "Poppins", serif;
+    box-shadow: 0 4px 8px rgba(34, 35, 36, 0.3);
+    background-color: transparent;
+    color: white;
 }
 
 /* Estilos de botão */
 button {
     padding: 15px 30px;
-    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
-    border: 2px solid #000;
+    border: 1px solid rgba(255, 255, 255, 0.22);
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
-    color: var(--color-text);
-    border-radius: 0 25px 25px 0;
+    position: absolute;
+    top: 35%;
+    right: 18px;
+    height: 32px;
+    padding: 0 15px;
+    background-color: var(--color-button);
+    border: none;
+    color: var(--color-white);
+    border-radius: 20px;
+    font-size: 14px;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .botao-excluir {
@@ -171,8 +214,8 @@ button {
 /* Listas */
 ul {
     list-style-type: none;
-    color: var(--color-text);
-    font-family: "Inter", sans-serif;
+    color: var(--color-white);
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
     margin: 20px 0;
 }
