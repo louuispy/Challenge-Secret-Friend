@@ -18,7 +18,19 @@ function exibirNomesAmigos() {
     for (let nome of amigos) {
         let li = document.createElement("li");
         li.innerHTML = nome;
-        listaAmigosTela.appendChild(li);  
+        listaAmigosTela.appendChild(li); 
+        
+        let botaoExcluirNome = document.createElement("button");
+        botaoExcluirNome.innerHTML = "X";
+        botaoExcluirNome.classList.add("botao-excluir");
+        botaoExcluirNome.title = "Excluir nome"
+
+        botaoExcluirNome.onclick = function() {
+            amigos.splice(amigos.indexOf(nome), 1);
+            exibirNomesAmigos();
+        };
+
+        li.appendChild(botaoExcluirNome);
     };
 };
 

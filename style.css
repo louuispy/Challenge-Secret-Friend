@@ -125,6 +125,27 @@ button {
     background-color: #a1a1a1;
 }
 
+.botao-excluir {
+    background-color: rgba(95, 2, 2);
+    opacity: 0.5;
+    border: none;
+    color: var(--color-white);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 30px;
+    border-radius: 10px;
+    font-size: small;
+    cursor: pointer;
+    transition: transform 0.3s, visibility 0.3s, opacity 0.3s, background-color 0.3s;
+}   
+
+.botao-excluir:hover {
+    background-color: red;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
 /* Listas */
 ul {
     list-style-type: none;
