@@ -1,7 +1,8 @@
 
 # Amigo Secreto
 
-<img width="1011" height="857" alt="image" src="https://github.com/user-attachments/assets/57f947f0-d2c7-4de3-948f-3a500ae6fea9" />
+<img width="1024" height="833" alt="image" src="https://github.com/user-attachments/assets/d52e84cc-c573-4b98-8e51-f57a28c6e159" />
+
 
 
 ---
