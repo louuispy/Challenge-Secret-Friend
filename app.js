@@ -5,7 +5,7 @@ function adicionarAmigo() {
     if (campoNome.value == "") {
         alert("Por favor, digite um nome!");
     } else {
-        amigos.push('\n' +campoNome.value);
+        amigos.push(campoNome.value);
         exibirNomesAmigos();
         campoNome.value = "" ;
     };
