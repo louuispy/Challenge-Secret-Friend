@@ -74,6 +74,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
+    min-width: 400px;
 }
 
 /* Títulos */
