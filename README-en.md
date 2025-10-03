@@ -63,5 +63,7 @@ This project can be used, for example, during holiday gatherings, friend meetups
 ---
 
 ### 👨🏻‍💻 Author
+**Luís Henrique**  
+Data Scientist and UX/UI Designer
 
-Luís Henrique
+[Connect with me on LinkedIn](https://www.linkedin.com/in/luishenrique-ia/)
